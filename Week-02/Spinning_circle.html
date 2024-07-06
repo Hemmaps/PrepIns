@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spinning Circle Loader</title> 
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-color: black;
+        }
+      .circle{
+        width: 200px;
+        height:200px;
+        border-radius: 50%;
+        border: 12px solid grey;
+        border-top-color: rgb(63, 63, 157);
+        animation: ani 3s infinite;
+      }
+      @keyframes ani {
+        100%{rotate:360deg}
+      }
+    </style>
+  </head>
+  <body>
+      <div class="loader">
+        <div class="circle"></div>
+        </div>
+  </body>
+</html>
