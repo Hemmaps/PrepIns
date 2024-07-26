@@ -1,16 +1,27 @@
 
-let len,ht
-let peri,area
-function calcPerimeter(len,ht){
+let len = document.getElementById("len");
+let ht = document.getElementById("ht");
+let peri,area;
+let btn1 = document.getElementById("btn1");
+let result1=document.getElementById("result1");
+let btn2 = document.getElementById("btn2");
+let result2=document.getElementById("result2");
 
-    peri = 2 * (len+ht)
-    console.log(`The perimeter is ${peri}`)
+
+
+btn1.onclick = function calcPerimeter(){
+    let l = Number(len.value);
+    let b = Number(ht.value);
+    peri = 2 * (l+b)
+    result1.innerText=`The perimeter is ${peri}`;
 }
 
-function calcArea(len,ht){
-    area = len*ht;
-    console.log(`The area is ${area}`)
+btn2.onclick = function calcArea(){
+    let l = Number(len.value);
+    let b = Number(ht.value);
+    area = l*b;
+    result2.innerText=`The area is ${area}`;
 
 }
-calcPerimeter(2,3)
-calcArea(2,3)
+//calcPerimeter(2,3)
+//calcArea(2,3)

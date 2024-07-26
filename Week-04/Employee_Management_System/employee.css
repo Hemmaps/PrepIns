@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container h2 {
+    padding: 30px;
+    margin: 30px;
+    font-size: 24px;
+}
+
+.infos {
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+}
+
+.infos input {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .btn1 button {
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 3px solid rgb(138, 223, 249);
+    color: white;
+    background-color: rgb(4, 4, 72);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container .btn1 button:hover {
+    opacity: 0.8;
+}
+
+.others {
+    text-align: left;
+    margin: 20px;
+}
+
+.avd-salary,
+.find-employee,
+.inc-salary,
+.sort-age {
+    padding: 35px;
+}
+
+.others label {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.avd-salary button,
+.find-employee button,
+.inc-salary button,
+.sort-age button {
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid blueviolet;
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.result {
+    font-size: 18px;
+    padding: 25px;
+    border: 2px solid black;
+    margin: 20px;
+    background-color: gainsboro;
+}

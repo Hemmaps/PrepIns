@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.con{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.con h2{
+    padding: 20px;
+}
+.con .qn{
+    padding: 10px;
+}
+.con .labels{
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+.but button{
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    border-radius: 5px;
+    width:100%;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.but button:hover{
+    opacity: 0.7;
+}
+
+.searchi input{
+    font-size: 18px;
+}
+.searchi button{
+    font-size: 18px;
+    padding: 5px 15px;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.searchi button:hover{
+    opacity: 0.7;
+}
+#output{
+    font-size: 20px;
+    border: 2px solid blueviolet;
+    padding: 20px;
+    text-align: left;
+}
+
+.book{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 15px;
+    border: 2px solid gray;
+    line-height: 2;
+    margin: 10px;
+
+}

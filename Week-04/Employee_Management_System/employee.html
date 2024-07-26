@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="employee.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Management System</h2>
+        <form id="info" onsubmit="addEmployees(event)">
+            <div class="infos">
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="infos">
+                <label for="age">Age :</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div class="infos">
+                <label for="dept">Department :</label>
+                <input type="text" name="dept" id="dept">
+            </div>
+            <div class="infos">
+                <label for="salary">Salary :</label>
+                <input type="number" name="salary" id="salary">
+            </div>
+            <div class="btn1">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="others">
+        <h2>Other Details</h2>
+        <div class="avd-salary">
+            <label for="avgsalary">Average Salary of the employees</label>
+            <button type="button" onclick="calculateAvgSalary()">Calculate Average</button>
+            <div id="result1" class="result"></div>
+        </div>
+        <div class="find-employee">
+            <label for="find-employee">Enter the department :</label>
+            <input type="text" name="find-dept" id="find-dept">
+            <button type="button" onclick="employeeDept()">Find</button>
+            <div id="result2" class="result"></div>
+        </div>
+        <div class="inc-salary">
+            <label for="inc-salary">Increase Salary by percentage:</label>
+            <input type="number" name="percentage" id="percentage">
+            <button type="button" onclick="increaseSalary()">Increase</button>
+            <div id="result3" class="result"></div>
+        </div>
+        <div class="sort-age">
+            <label for="sort-age">Sort employees by age:</label>
+            <button type="button" onclick="sortEmployeesByAge()">Sort</button>
+            <div id="result4" class="result"></div>
+        </div>
+    </div>
+    <script src="employee.js"></script>
+</body>
+</html>
